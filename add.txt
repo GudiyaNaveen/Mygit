@@ -1,0 +1,46 @@
+set history filename add.txt
+set history save on
+l
+l
+tui enable
+tui enable
+tui disable
+start
+tui enable
+b 10
+b 20
+i b
+n
+n
+print x
+print y
+n
+step
+n
+n
+n
+n
+n
+tui disable
+i b
+disable 2
+disable 3
+enable 2
+enable 3
+i b
+disable
+i b
+enable
+i b
+start
+i b
+n
+n
+n
+c
+n
+n
+n
+n
+n
+q
