@@ -1,28 +1,33 @@
 /* Write a C program to find frequency of character in a string. "abcabcddd" */
 
 #include<stdio.h>
-#include<string.h>
-#define SIZE 500
-void My_memcpy(char *,char *,int );
+#define SIZE 1000
+
+int freq_ch(char *s,char);
 int main()
 {
-    char str1[SIZE],str2[SIZE];
-    int n;
+    int (*fp)(char *,char);
+    char str[SIZE],ch;
+    char *const ptr=&ch;
     printf("Enter a string: ");
-    scanf("%[^\n]s",str1);
-    printf("Enter how many bytes to copy a string: ");
-    scanf("%d",&n);
-    My_memcpy(str2,str1,n);
-    printf("Copy the string from source to destination(dest<--src) of %d bytes: %s\n",n,str2);
+    scanf("%[^\n]s",str);
+    printf("Enter a charcter for frequency: ");
+    scanf("\n%c",&ch);
+    fp=freq_ch;
+    fp(str,ch);
     return 0;
 }
 
-void My_memcpy(char *d,char *s,int n)
+int freq_ch(char *s,char ch)
 {
-    int i;
-    for(i=0;i<n;i++)
+    int i=0,count=0;
+    for(i=0;*(s+i)!='\0';i++)
     {
-        *(d+i)=*(s+i);
+        if(*(s+i)==ch)
+        {
+            count++;
+        }
     }
-    *(d+i)='\0';
+    return count;
+    printf("Frequency of '%c' charcter is: %d\n",ch,count);
 }
