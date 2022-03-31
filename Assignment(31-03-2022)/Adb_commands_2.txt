@@ -1,0 +1,1115 @@
+Microsoft Windows [Version 10.0.22000.556]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\NAVEEN\Downloads\platform-tools_r33.0.1-windows\platform-tools>adb devices
+List of devices attached
+4deaa8407d84    device
+
+
+C:\Users\NAVEEN\Downloads\platform-tools_r33.0.1-windows\platform-tools>adb devices -l
+List of devices attached
+4deaa8407d84           device product:riva model:Redmi_5A device:riva transport_id:9
+
+
+C:\Users\NAVEEN\Downloads\platform-tools_r33.0.1-windows\platform-tools>adb shell input text "\Hello India"
+Error: Invalid arguments for command: text
+Usage: input [<source>] <command> [<arg>...]
+
+The sources are:
+      dpad
+      keyboard
+      mouse
+      touchpad
+      gamepad
+      touchnavigation
+      joystick
+      touchscreen
+      stylus
+      trackball
+
+The commands and default sources are:
+      text <string> (Default: touchscreen)
+      keyevent [--longpress] <key code number or name> ... (Default: keyboard)
+      tap <x> <y> (Default: touchscreen)
+      swipe <x1> <y1> <x2> <y2> [duration(ms)] (Default: touchscreen)
+      draganddrop <x1> <y1> <x2> <y2> [duration(ms)] (Default: touchscreen)
+      press (Default: trackball)
+      roll <dx> <dy> (Default: trackball)
+      tmode <tmode>
+
+C:\Users\NAVEEN\Downloads\platform-tools_r33.0.1-windows\platform-tools>adb shell input text "\Hello \India"
+Error: Invalid arguments for command: text
+Usage: input [<source>] <command> [<arg>...]
+
+The sources are:
+      dpad
+      keyboard
+      mouse
+      touchpad
+      gamepad
+      touchnavigation
+      joystick
+      touchscreen
+      stylus
+      trackball
+
+The commands and default sources are:
+      text <string> (Default: touchscreen)
+      keyevent [--longpress] <key code number or name> ... (Default: keyboard)
+      tap <x> <y> (Default: touchscreen)
+      swipe <x1> <y1> <x2> <y2> [duration(ms)] (Default: touchscreen)
+      draganddrop <x1> <y1> <x2> <y2> [duration(ms)] (Default: touchscreen)
+      press (Default: trackball)
+      roll <dx> <dy> (Default: trackball)
+      tmode <tmode>
+
+C:\Users\NAVEEN\Downloads\platform-tools_r33.0.1-windows\platform-tools>adb shell input text "\Hello"
+
+C:\Users\NAVEEN\Downloads\platform-tools_r33.0.1-windows\platform-tools>adb connect 192.168.1.1
+cannot connect to 192.168.1.1:5555: No connection could be made because the target machine actively refused it. (10061)
+
+C:\Users\NAVEEN\Downloads\platform-tools_r33.0.1-windows\platform-tools>adb connect 192.168.1.64
+cannot connect to 192.168.1.64:5555: No connection could be made because the target machine actively refused it. (10061)
+
+C:\Users\NAVEEN\Downloads\platform-tools_r33.0.1-windows\platform-tools>adb connect 192.168.43.1
+connected to 192.168.43.1:5555
+
+C:\Users\NAVEEN\Downloads\platform-tools_r33.0.1-windows\platform-tools>adb install "C:\Users\NAVEEN\Downloads\zapya.apk"
+Performing Streamed Install
+Success
+
+C:\Users\NAVEEN\Downloads\platform-tools_r33.0.1-windows\platform-tools>adb shell pm list packages
+package:com.miui.screenrecorder
+package:com.factory.mmigroup
+package:com.android.cts.priv.ctsshim
+package:com.google.android.youtube
+package:com.qualcomm.qti.auth.sampleextauthservice
+package:com.google.android.ext.services
+package:com.android.providers.telephony
+package:com.miui.powerkeeper
+package:com.xiaomi.miplay_client
+package:com.google.android.googlequicksearchbox
+package:cn.wps.xiaomi.abroad.lite
+package:com.miui.fm
+package:com.snapwork.hdfcsec
+package:com.android.providers.calendar
+package:com.whereismytrain.android
+package:org.telegram.messenger
+package:com.android.providers.media
+package:com.milink.service
+package:com.phonepe.app
+package:com.qti.service.colorservice
+package:com.google.android.onetimeinitializer
+package:com.google.android.ext.shared
+package:com.xiaomi.powerchecker
+package:com.xiaomi.account
+package:com.android.wallpapercropper
+package:com.bsp.catchlog
+package:com.quicinc.cne.CNEService
+package:com.xiaomi.mi_connect_service
+package:com.xiaomi.micloud.sdk
+package:com.wt.secret_code_manager
+package:com.android.updater
+package:com.android.documentsui
+package:com.quora.android
+package:com.android.externalstorage
+package:com.qualcomm.uimremoteclient
+package:com.android.htmlviewer
+package:com.qualcomm.svi
+package:com.miui.securityadd
+package:com.whatsapp
+package:com.qualcomm.qti.uceShimService
+package:com.android.companiondevicemanager
+package:com.miui.gallery
+package:com.android.mms.service
+package:com.miui.msa.global
+package:com.android.providers.downloads
+package:com.qualcomm.qti.auth.sampleauthenticatorservice
+package:com.xiaomi.payment
+package:com.miui.securitycenter
+package:android.autoinstalls.config.Xiaomi.riva
+package:com.qualcomm.qti.telephonyservice
+package:com.android.browser
+package:com.miui.videoplayer
+package:com.qualcomm.qti.auth.fidocryptoservice
+package:com.google.android.configupdater
+package:com.android.soundrecorder
+package:com.miui.userguide
+package:com.android.defcontainer
+package:com.qti.confuridialer
+package:com.miui.guardprovider
+package:com.android.providers.downloads.ui
+package:com.android.vending
+package:com.android.pacprocessor
+package:com.qualcomm.cabl
+package:com.miui.backup
+package:com.xiaomi.mirecycle
+package:com.miui.notification
+package:com.miui.micloudsync
+package:com.miui.daemon
+package:com.android.certinstaller
+package:com.android.carrierconfig
+package:com.google.android.marvin.talkback
+package:org.codeaurora.bluetooth
+package:com.wapi.wapicertmanage
+package:com.qti.qualcomm.datastatusnotification
+package:com.chinaappsremover
+package:android
+package:com.android.contacts
+package:com.qualcomm.qti.callfeaturessetting
+package:com.qualcomm.wfd.service
+package:com.miui.hybrid
+package:com.miui.vsimcore
+package:com.mi.webkit.core
+package:com.miui.securitycore
+package:com.qti.qualcomm.deviceinfo
+package:com.snapwork.hdfc
+package:com.google.android.apps.inputmethod.hindi
+package:com.android.egg
+package:com.android.mms
+package:com.android.mtp
+package:com.android.stk
+package:com.android.backupconfirm
+package:se.dirac.acs
+package:com.xiaomi.simactivate.service
+package:com.mfashiongallery.emag
+package:com.instagram.android
+package:com.miui.player
+package:com.miui.miservice
+package:com.cam.scanner.camscanner.documentscanner
+package:com.android.provision
+package:org.codeaurora.ims
+package:com.android.statementservice
+package:in.startv.hotstar
+package:com.google.android.gm
+package:com.miui.sysopt
+package:com.miui.system
+package:com.google.android.apps.tachyon
+package:com.android.calendar
+package:com.koushikdutta.vysor
+package:com.miui.global.packageinstaller
+package:com.android.systemui.theme.dark
+package:com.miui.translation.kingsoft
+package:com.miui.virtualsim
+package:com.miui.compass
+package:com.qualcomm.qti.auth.secureextauthservice
+package:com.google.android.setupwizard
+package:com.miui.rom
+package:com.miui.android.fashiongallery
+package:com.qualcomm.qcrilmsgtunnel
+package:com.android.providers.settings
+package:com.android.sharedstoragebackup
+package:com.mediatek.batterywarning
+package:com.facebook.services
+package:com.xiaomi.location.fused
+package:com.google.android.music
+package:com.android.printspooler
+package:com.android.dreams.basic
+package:com.android.incallui
+package:com.fido.xiaomi.uafclient
+package:com.duokan.phone.remotecontroller
+package:com.miui.bugreport
+package:com.android.inputdevices
+package:com.fido.asm
+package:com.qualcomm.qti.auth.securesampleauthservice
+package:com.android.bips
+package:com.qualcomm.qti.StatsPollManager
+package:com.qti.dpmserviceapp
+package:com.mxtech.videoplayer.ad
+package:com.android.fileexplorer
+package:com.qti.xdivert
+package:com.google.android.apps.docs
+package:com.google.android.apps.maps
+package:com.miui.translation.youdao
+package:com.miui.cloudbackup
+package:net.one97.paytm
+package:com.android.cellbroadcastreceiver
+package:com.google.android.webview
+package:com.amazon.appmanager
+package:com.android.server.telecom
+package:com.google.android.syncadapters.contacts
+package:com.android.keychain
+package:com.android.camera
+package:com.android.chrome
+package:com.xiaomi.glgm
+package:com.xiaomi.upnp
+package:com.xiaomi.xmsf
+package:com.google.android.packageinstaller
+package:com.google.android.gms
+package:com.google.android.gsf
+package:com.google.android.tts
+package:com.qualcomm.qti.qtisystemservice
+package:com.android.calllogbackup
+package:com.miui.freeform
+package:com.google.android.partnersetup
+package:com.google.android.videos
+package:org.codeaurora.btmultisim
+package:com.android.carrierdefaultapp
+package:com.xiaomi.mipicks
+package:com.dsi.ant.server
+package:com.xiaomi.finddevice
+package:com.android.proxyhandler
+package:com.xiaomi.joyose
+package:com.qualcomm.qti.loadcarrier
+package:com.mi.android.globalFileexplorer
+package:com.miui.notes
+package:com.miui.wmsvc
+package:com.xiaomi.misettings
+package:com.jio.myjio
+package:com.google.android.feedback
+package:com.google.android.printservice.recommendation
+package:com.xiaomi.midrop
+package:com.google.android.apps.photos
+package:com.miui.translationservice
+package:com.google.android.syncadapters.calendar
+package:com.miui.cloudservice
+package:com.android.managedprovisioning
+package:com.miui.hybrid.accessory
+package:com.miui.translation.xmcloud
+package:com.miui.touchassistant
+package:com.xiaomi.providers.appindex
+package:com.amazon.avod.thirdpartyclient
+package:com.larksuite.suite
+package:com.android.providers.partnerbookmarks
+package:com.mi.globalTrendNews
+package:com.android.smspush
+package:com.mi.android.globalminusscreen
+package:com.miui.calculator
+package:com.android.wallpaper.livepicker
+package:com.mi.AutoTest
+package:com.miui.cloudservice.sysbase
+package:com.miui.miwallpaper
+package:com.facebook.system
+package:com.xiaomi.bluetooth
+package:com.google.android.backuptransport
+package:com.miui.cleanmaster
+package:com.qualcomm.qti.accesscache
+package:com.android.storagemanager
+package:com.miui.analytics
+package:com.android.bookmarkprovider
+package:com.linkedin.android
+package:com.android.settings
+package:com.qualcomm.qti.ims
+package:com.qualcomm.qti.lpa
+package:com.qualcomm.qti.uim
+package:com.miui.weather2
+package:com.google.android.apps.nbu.paisa.user
+package:com.hashifytech.stickers
+package:com.myntra.android
+package:com.qualcomm.location
+package:com.xiaomi.scanner
+package:com.android.cts.ctsshim
+package:com.miui.yellowpage
+package:com.miui.antispam
+package:com.miui.systemui.carriers.overlay
+package:com.qualcomm.qti.services.secureui
+package:com.android.vpndialogs
+package:com.android.email
+package:com.android.phone
+package:com.android.shell
+package:com.dewmobile.kuaiya
+package:com.android.wallpaperbackup
+package:com.android.providers.blockednumber
+package:com.micredit.in
+package:com.android.providers.userdictionary
+package:com.android.emergency
+package:com.qualcomm.qti.qmmi
+package:com.android.location.fused
+package:com.android.deskclock
+package:com.android.systemui
+package:com.android.bluetoothmidiservice
+package:com.qualcomm.qti.confdialer
+package:com.qualcomm.qti.poweroffalarm
+package:com.mi.globallayout
+package:com.facebook.appmanager
+package:com.xiaomi.discover
+package:com.miui.smsextra
+package:com.android.thememanager
+package:com.mipay.wallet.id
+package:com.mipay.wallet.in
+package:com.miui.fmservice
+package:com.android.thememanager.module
+package:com.lbe.security.miui
+package:com.android.bluetooth
+package:com.qualcomm.timeservice
+package:com.qualcomm.embms
+package:com.android.providers.contacts
+package:com.android.captiveportallogin
+package:cn.wps.moffice_eng
+package:com.miui.core
+package:com.miui.face
+package:com.miui.home
+package:com.google.android.inputmethod.latin
+package:com.miui.audioeffect
+
+C:\Users\NAVEEN\Downloads\platform-tools_r33.0.1-windows\platform-tools>adb shell pm list packages | findstr myntra.android
+package:com.myntra.android
+
+C:\Users\NAVEEN\Downloads\platform-tools_r33.0.1-windows\platform-tools>adb uninstall com.myntra.android
+Success
+
+C:\Users\NAVEEN\Downloads\platform-tools_r33.0.1-windows\platform-tools>adb shell
+riva:/ $ ls
+ls: ./vndservice_contexts: Permission denied
+ls: ./verity_key: Permission denied
+ls: ./ueventd.rc: Permission denied
+ls: ./plat_hwservice_contexts: Permission denied
+ls: ./nonplat_service_contexts: Permission denied
+ls: ./nonplat_hwservice_contexts: Permission denied
+ls: ./init.zygote64_32.rc: Permission denied
+ls: ./init.zygote32.rc: Permission denied
+ls: ./init.usb.rc: Permission denied
+ls: ./init.usb.configfs.rc: Permission denied
+ls: ./init.recovery.qcom.rc: Permission denied
+ls: ./init.recovery.hardware.rc: Permission denied
+ls: ./init.rc: Permission denied
+ls: ./init.miui.rc: Permission denied
+ls: ./init.miui.post_boot.sh: Permission denied
+ls: ./init.miui.nativedebug.rc: Permission denied
+ls: ./init.miui.google_revenue_share_v2.rc: Permission denied
+ls: ./init.miui.google_revenue_share.rc: Permission denied
+ls: ./init.miui.early_boot.sh: Permission denied
+ls: ./init.miui.cust.rc: Permission denied
+ls: ./init.environ.rc: Permission denied
+ls: ./init.carrier.rc: Permission denied
+ls: ./init: Permission denied
+ls: ./default.prop: Permission denied
+acct        config dsp                   nonplat_property_contexts plat_property_contexts root     sys
+bt_firmware cust   etc                   nonplat_seapp_contexts    plat_seapp_contexts    sbin     system
+bugreports  d      firmware              oem                       plat_service_contexts  sdcard   tombstones
+cache       data   mnt                   persist                   proc                   sepolicy vendor
+charger     dev    nonplat_file_contexts plat_file_contexts        res                    storage
+1|riva:/ $ cd storage/
+riva:/storage $ ls
+2230-71B0 emulated self
+riva:/storage $ cd self/
+riva:/storage/self $ ls
+primary
+riva:/storage/self $ cd primary/
+riva:/storage/self/primary $ ls
+Android           QuotesCreator                                                                       backups
+Backucup          SHAREit                                                                             browser
+Calligraphy\ Name Screenshot_2019-12-28-18-43-23-219_com.whatsapp.a4287cf99f313630a83effe1f6a6b665.sa com.UCMobile.intl
+CamScanner        Subtitles                                                                           com.facebook.katana
+Classplus         Telegram                                                                            dctp
+DCIM              UCDownloads                                                                         did
+Download          UCMusic                                                                             documents
+Fonts             U_DATA_X                                                                            fac_sources
+Lark              Vogo                                                                                km_logos.rar
+MIUI              WhatsApp                                                                            qpython
+Pictures          YourQuote
+QTAudioEngine     amap
+riva:/storage/self/primary $ cd documents/
+riva:/storage/self/primary/documents $ ls
+ScannerGo
+riva:/storage/self/primary/documents $ cd ..
+riva:/storage/self/primary $ cd WhatsApp/
+riva:/storage/self/primary/WhatsApp $ ls
+Databases Media
+riva:/storage/self/primary/WhatsApp $ cd media
+riva:/storage/self/primary/WhatsApp/media $ ls
+Volatile.pptx WhatsApp\ Animated\ Gifs WhatsApp\ Images          WhatsApp\ Video
+WallPaper     WhatsApp\ Audio          WhatsApp\ Profile\ Photos WhatsApp\ Voice\ Notes
+WhatsApp      WhatsApp\ Documents      WhatsApp\ Stickers
+riva:/storage/self/primary/WhatsApp/media $ cd W
+WallPaper/                     WhatsApp Audio/                WhatsApp Profile Photos/       WhatsApp Voice Notes/
+WhatsApp                       WhatsApp Documents/            WhatsApp Stickers/
+WhatsApp Animated Gifs/        WhatsApp Images/               WhatsApp Video/
+riva:/storage/self/primary/WhatsApp/media $ cd WhatsApp Documents
+/system/bin/sh: cd: /storage/self/primary/Documents/media: No such file or directory
+2|riva:/storage/self/primary/WhatsApp/media $ cd WhatsApp Documents/
+/system/bin/sh: cd: /storage/self/primary/Documents/media: No such file or directory
+2|riva:/storage/self/primary/WhatsApp/media $ cd Documents/
+/system/bin/sh: cd: /storage/self/primary/WhatsApp/media/Documents: No such file or directory
+2|riva:/storage/self/primary/WhatsApp/media $ cd ..
+riva:/storage/self/primary/WhatsApp $ cd ..
+riva:/storage/self/primary $ cd ..
+riva:/storage/self $ cd ..
+riva:/storage $ ls
+2230-71B0 emulated self
+riva:/storage $ cd emulated/
+riva:/storage/emulated $ ls
+ls: .: Permission denied
+1|riva:/storage/emulated $ cd ..
+riva:/storage $ cd 2230-71B0/
+riva:/storage/2230-71B0 $ ls
+1_5076102588785492393.mkv
+5_6141021463332782424.mp4
+5_6174828727172595935.mkv
+Android
+Avengers\ -\ Infinity\ War\ (2018).avi
+Bheemla-Nayak-k6fld-2022.mp4
+DCIM
+Documents
+IMG_20210124_123123.jpg
+IMG_20210124_123138.jpg
+IMG_20210124_123216.jpg
+IMG_20210124_123220.jpg
+IMG_20210124_145631.jpg
+IMG_20210124_145633.jpg
+IMG_20210124_145639.jpg
+IMG_20210124_145641.jpg
+IMG_20210124_145829.jpg
+IMG_20210124_145834.jpg
+IMG_20210124_150046.jpg
+IMG_20210124_150104.jpg
+IMG_20210124_150107.jpg
+IMG_20210124_150137.jpg
+IMG_20210124_150141.jpg
+IMG_20210124_150200.jpg
+IMG_20210124_150232.jpg
+IMG_20210124_150235.jpg
+IMG_20210124_150302.jpg
+IMG_20210124_150306.jpg
+IMG_20210124_150311.jpg
+IMG_20210124_150313.jpg
+IMG_20210124_150423.jpg
+IMG_20210124_150429.jpg
+IMG_20210124_150436.jpg
+Kernel\ Masters
+LOST.DIR
+Love-Story-2021.mp4
+MIUI
+New\ folder
+Page\ No_(53-56).pdf
+Prmovies.com-Tharki_Tailor_S1_E1_Lovemovies_Uncut.mp4
+Raazi.mkv
+System\ Volume\ Information
+VID_20210124_123252_HSR_120.mp4
+VID_20210124_123351_HSR_120.mp4
+VID_20210124_144238_HSR_120.mp4
+VID_20210124_144352_HSR_120.mp4
+VID_20210124_144538_HSR_120.mp4
+VID_20210124_144636_HSR_120.mp4
+VID_20210124_144723_HSR_120.mp4
+VID_20210124_144931_HSR_120.mp4
+VID_20210124_145146_HSR_120.mp4
+VID_20210124_145352_HSR_120.mp4
+chintu
+download
+hindi
+photos
+videos
+www.TamilMV.city\ -\ Bharat\ Ane\ Nenu\ (2018)\ Telugu\ v2\ True\ HQ\ HDRip\ -\ 720p\ -\ x.mkv
+riva:/storage/2230-71B0 $ cd DCIM/
+riva:/storage/2230-71B0/DCIM $ ls
+059446c359f1652a4133040f52ff2484.0p.mp4
+3d\ photo\ collage\ maker
+89511e227d6d149127372a6db706a526.0p.mp4
+Camera
+Facebook
+Gmail\ -\ ICICI\ BANK\ PROBATIONARY\ OFFICERS’\ RECRUITMENT\ PROCESS\ GROUP\ DISCUSSION\ &\ PERSONAL\ INTERVIEW\ PROCESS.pdf
+IMG_9156.JPG
+IMG_9157.JPG
+Kiran\ maths\ publication.pdf
+ScreenRecorder
+Screenshots
+d1003f7b53c54374b8b1859654db7f02.0p.mp4
+df0dbf89e74e9284bc81dc001f7177b2.0p.mp4
+restored
+riva:/storage/2230-71B0/DCIM $ cd ..
+riva:/storage/2230-71B0 $ ls
+1_5076102588785492393.mkv
+5_6141021463332782424.mp4
+5_6174828727172595935.mkv
+Android
+Avengers\ -\ Infinity\ War\ (2018).avi
+Bheemla-Nayak-k6fld-2022.mp4
+DCIM
+Documents
+IMG_20210124_123123.jpg
+IMG_20210124_123138.jpg
+IMG_20210124_123216.jpg
+IMG_20210124_123220.jpg
+IMG_20210124_145631.jpg
+IMG_20210124_145633.jpg
+IMG_20210124_145639.jpg
+IMG_20210124_145641.jpg
+IMG_20210124_145829.jpg
+IMG_20210124_145834.jpg
+IMG_20210124_150046.jpg
+IMG_20210124_150104.jpg
+IMG_20210124_150107.jpg
+IMG_20210124_150137.jpg
+IMG_20210124_150141.jpg
+IMG_20210124_150200.jpg
+IMG_20210124_150232.jpg
+IMG_20210124_150235.jpg
+IMG_20210124_150302.jpg
+IMG_20210124_150306.jpg
+IMG_20210124_150311.jpg
+IMG_20210124_150313.jpg
+IMG_20210124_150423.jpg
+IMG_20210124_150429.jpg
+IMG_20210124_150436.jpg
+Kernel\ Masters
+LOST.DIR
+Love-Story-2021.mp4
+MIUI
+New\ folder
+Page\ No_(53-56).pdf
+Prmovies.com-Tharki_Tailor_S1_E1_Lovemovies_Uncut.mp4
+Raazi.mkv
+System\ Volume\ Information
+VID_20210124_123252_HSR_120.mp4
+VID_20210124_123351_HSR_120.mp4
+VID_20210124_144238_HSR_120.mp4
+VID_20210124_144352_HSR_120.mp4
+VID_20210124_144538_HSR_120.mp4
+VID_20210124_144636_HSR_120.mp4
+VID_20210124_144723_HSR_120.mp4
+VID_20210124_144931_HSR_120.mp4
+VID_20210124_145146_HSR_120.mp4
+VID_20210124_145352_HSR_120.mp4
+chintu
+download
+hindi
+photos
+videos
+www.TamilMV.city\ -\ Bharat\ Ane\ Nenu\ (2018)\ Telugu\ v2\ True\ HQ\ HDRip\ -\ 720p\ -\ x.mkv
+riva:/storage/2230-71B0 $ ls
+11.1.txt
+1_5076102588785492393.mkv
+5_6141021463332782424.mp4
+5_6174828727172595935.mkv
+Android
+Avengers\ -\ Infinity\ War\ (2018).avi
+Bheemla-Nayak-k6fld-2022.mp4
+DCIM
+Documents
+IMG_20210124_123123.jpg
+IMG_20210124_123138.jpg
+IMG_20210124_123216.jpg
+IMG_20210124_123220.jpg
+IMG_20210124_145631.jpg
+IMG_20210124_145633.jpg
+IMG_20210124_145639.jpg
+IMG_20210124_145641.jpg
+IMG_20210124_145829.jpg
+IMG_20210124_145834.jpg
+IMG_20210124_150046.jpg
+IMG_20210124_150104.jpg
+IMG_20210124_150107.jpg
+IMG_20210124_150137.jpg
+IMG_20210124_150141.jpg
+IMG_20210124_150200.jpg
+IMG_20210124_150232.jpg
+IMG_20210124_150235.jpg
+IMG_20210124_150302.jpg
+IMG_20210124_150306.jpg
+IMG_20210124_150311.jpg
+IMG_20210124_150313.jpg
+IMG_20210124_150423.jpg
+IMG_20210124_150429.jpg
+IMG_20210124_150436.jpg
+Kernel\ Masters
+LOST.DIR
+Love-Story-2021.mp4
+MIUI
+New\ folder
+Page\ No_(53-56).pdf
+Prmovies.com-Tharki_Tailor_S1_E1_Lovemovies_Uncut.mp4
+Raazi.mkv
+System\ Volume\ Information
+VID_20210124_123252_HSR_120.mp4
+VID_20210124_123351_HSR_120.mp4
+VID_20210124_144238_HSR_120.mp4
+VID_20210124_144352_HSR_120.mp4
+VID_20210124_144538_HSR_120.mp4
+VID_20210124_144636_HSR_120.mp4
+VID_20210124_144723_HSR_120.mp4
+VID_20210124_144931_HSR_120.mp4
+VID_20210124_145146_HSR_120.mp4
+VID_20210124_145352_HSR_120.mp4
+chintu
+download
+hindi
+photos
+videos
+www.TamilMV.city\ -\ Bharat\ Ane\ Nenu\ (2018)\ Telugu\ v2\ True\ HQ\ HDRip\ -\ 720p\ -\ x.mkv
+riva:/storage/2230-71B0 $ exit
+
+C:\Users\NAVEEN\Downloads\platform-tools_r33.0.1-windows\platform-tools>adb shell cat /storage/2230-71B0/11.1.txt
+BARCLAYS BANK PLC NEW DELHI BRANCH,INDIA
+
+Greetings to you,
+The International Monetary Fund has brought to your notice that you are selected among the Fund winners of £200,000 GBP from the United Nation (U.N)
+Your payment is categorized as: Lottery/ Inheritance/ Undelivered fund pending with the Barclays Bank Plc since has been recently approved.
+Barclays Bank Plc CEO,JES STALEY and the United Nation's President and Secretary General of United Nations have met with Commissioner
+of Finance in India and Barclays Bank Plc Branch in India regarding the unclaimed funds which have been due for a long run. Therefore,
+we are writing this notice to inform you that £200,000 GBP will be released to you,as it was recommended by Commissioner of Finance
+that the Beneficiary(winner)is required to forward his or her details well filled below for immediate effect.
+Send your information to below Email Id only: barclaysbank487@gmail.com
+1. Full Names:
+2. Residential Address:
+3. Mobile Number:
+4. Occupation:
+5. Sex: __Age:
+6. Nationality:
+7. City:
+8. Marital Status:
+9. E-mail id:
+10.Bank Name, A/c No/ Holders Name/ Bank Branch:
+Note: We have given out a mandate (3working days) to claim this fund and after the due date,your fund will be returned to the Government account as unclaimed.
+
+
+
+C:\Users\NAVEEN\Downloads\platform-tools_r33.0.1-windows\platform-tools>adb shell getprop ro.build.version.release
+8.1.0
+
+C:\Users\NAVEEN\Downloads\platform-tools_r33.0.1-windows\platform-tools>adb shell ps
+USER           PID  PPID     VSZ    RSS WCHAN            ADDR S NAME
+root             1     0   20424   1532 SyS_epoll_wait      0 S init
+root             2     0       0      0 kthreadd            0 S [kthreadd]
+root             3     2       0      0 smpboot_thread_fn   0 S [ksoftirqd/0]
+root             5     2       0      0 worker_thread       0 S [kworker/0:0H]
+root             7     2       0      0 rcu_gp_kthread      0 S [rcu_preempt]
+root             8     2       0      0 rcu_gp_kthread      0 S [rcu_sched]
+root             9     2       0      0 rcu_gp_kthread      0 S [rcu_bh]
+root            10     2       0      0 nocb_leader_wait    0 S [rcuop/0]
+root            11     2       0      0 nocb_leader_wait    0 S [rcuos/0]
+root            12     2       0      0 nocb_leader_wait    0 S [rcuob/0]
+root            13     2       0      0 smpboot_thread_fn   0 S [rcuc/0]
+root            14     2       0      0 rcu_boost_kthread   0 S [rcub/0]
+root            15     2       0      0 smpboot_thread_fn   0 S [migration/0]
+root            16     2       0      0 smpboot_thread_fn   0 S [migration/1]
+root            17     2       0      0 smpboot_thread_fn   0 S [rcuc/1]
+root            18     2       0      0 smpboot_thread_fn   0 S [ksoftirqd/1]
+root            20     2       0      0 worker_thread       0 S [kworker/1:0H]
+root            21     2       0      0 rcu_nocb_kthread    0 S [rcuop/1]
+root            22     2       0      0 rcu_nocb_kthread    0 S [rcuos/1]
+root            23     2       0      0 rcu_nocb_kthread    0 S [rcuob/1]
+root            24     2       0      0 smpboot_thread_fn   0 S [migration/2]
+root            25     2       0      0 smpboot_thread_fn   0 S [rcuc/2]
+root            26     2       0      0 smpboot_thread_fn   0 S [ksoftirqd/2]
+root            28     2       0      0 worker_thread       0 S [kworker/2:0H]
+root            29     2       0      0 nocb_leader_wait    0 S [rcuop/2]
+root            30     2       0      0 nocb_leader_wait    0 S [rcuos/2]
+root            31     2       0      0 nocb_leader_wait    0 S [rcuob/2]
+root            32     2       0      0 smpboot_thread_fn   0 S [migration/3]
+root            33     2       0      0 smpboot_thread_fn   0 S [rcuc/3]
+root            34     2       0      0 smpboot_thread_fn   0 S [ksoftirqd/3]
+root            36     2       0      0 worker_thread       0 S [kworker/3:0H]
+root            37     2       0      0 rcu_nocb_kthread    0 S [rcuop/3]
+root            38     2       0      0 rcu_nocb_kthread    0 S [rcuos/3]
+root            39     2       0      0 rcu_nocb_kthread    0 S [rcuob/3]
+root            40     2       0      0 rescuer_thread      0 S [khelper]
+root            41     2       0      0 rescuer_thread      0 S [netns]
+root            42     2       0      0 rescuer_thread      0 S [perf]
+root            43     2       0      0 rescuer_thread      0 S [smd_channel_clo]
+root            44     2       0      0 kthread_worker_fn   0 S [dsps_smd_trans_]
+root            45     2       0      0 kthread_worker_fn   0 S [lpass_smd_trans]
+root            46     2       0      0 kthread_worker_fn   0 S [mpss_smd_trans_]
+root            47     2       0      0 kthread_worker_fn   0 S [wcnss_smd_trans]
+root            48     2       0      0 kthread_worker_fn   0 S [rpm_smd_trans_g]
+root            49     2       0      0 watchdog_kthread    0 S [msm_watchdog]
+root            50     2       0      0 rescuer_thread      0 S [smsm_cb_wq]
+root            51     2       0      0 msm_mpm_work_fn     0 D [kworker/u8:1]
+root            52     2       0      0 irq_thread          0 S [irq/226-cpr]
+root            53     2       0      0 rescuer_thread      0 S [deferwq]
+root            55     2       0      0 rescuer_thread      0 S [mpm]
+root            58     2       0      0 rescuer_thread      0 S [writeback]
+root            59     2       0      0 rescuer_thread      0 S [crypto]
+root            60     2       0      0 rescuer_thread      0 S [bioset]
+root            61     2       0      0 rescuer_thread      0 S [kblockd]
+root            77     2       0      0 rescuer_thread      0 S [edac-poller]
+root            78     2       0      0 ion_heap_deferred_free 0 S [system]
+root            79     2       0      0 irq_thread          0 S [irq/154-msm_iom]
+root            80     2       0      0 irq_thread          0 S [irq/156-msm_iom]
+root            81     2       0      0 irq_thread          0 S [irq/227-msm_iom]
+root            82     2       0      0 irq_thread          0 S [irq/228-msm_iom]
+root            83     2       0      0 irq_thread          0 S [irq/229-msm_iom]
+root            84     2       0      0 irq_thread          0 S [irq/230-msm_iom]
+root            85     2       0      0 irq_thread          0 S [irq/231-msm_iom]
+root            86     2       0      0 irq_thread          0 S [irq/232-msm_iom]
+root            87     2       0      0 irq_thread          0 S [irq/233-msm_iom]
+root            88     2       0      0 irq_thread          0 S [irq/234-msm_iom]
+root            89     2       0      0 irq_thread          0 S [irq/235-msm_iom]
+root            90     2       0      0 irq_thread          0 S [irq/236-msm_iom]
+root            91     2       0      0 irq_thread          0 S [irq/237-msm_iom]
+root            92     2       0      0 irq_thread          0 S [irq/238-msm_iom]
+root            93     2       0      0 irq_thread          0 S [irq/239-msm_iom]
+root            94     2       0      0 irq_thread          0 S [irq/240-msm_iom]
+root            95     2       0      0 irq_thread          0 S [irq/241-msm_iom]
+root            96     2       0      0 irq_thread          0 S [irq/242-msm_iom]
+root            97     2       0      0 irq_thread          0 S [irq/243-msm_iom]
+root            98     2       0      0 irq_thread          0 S [irq/244-msm_iom]
+root            99     2       0      0 irq_thread          0 S [irq/245-msm_iom]
+root           100     2       0      0 irq_thread          0 S [irq/246-msm_iom]
+root           101     2       0      0 irq_thread          0 S [irq/247-msm_iom]
+root           102     2       0      0 irq_thread          0 S [irq/248-msm_iom]
+root           103     2       0      0 rescuer_thread      0 S [devfreq_wq]
+root           104     2       0      0 rescuer_thread      0 S [governor_msm_ad]
+root           105     2       0      0 rescuer_thread      0 S [cfg80211]
+root           106     2       0      0 mem_pool_thread     0 S [rtmm_pool]
+root           107     2       0      0 mem_reclaim_thread  0 S [rtmm_reclaim]
+root           130     2       0      0 kswapd              0 S [kswapd0]
+root           131     2       0      0 fsnotify_mark_destroy 0 S [fsnotify_mark]
+root           132     2       0      0 ecryptfs_threadfn   0 S [ecryptfs-kthrea]
+root           133     2       0      0 rescuer_thread      0 S [cifsiod]
+root           157     2       0      0 rescuer_thread      0 S [rot_workq_0]
+root           158     2       0      0 dsi_event_thread    0 D [mdss_dsi_event]
+root           159     2       0      0 rescuer_thread      0 S [mdss_dsi_dba]
+root           160     2       0      0 rescuer_thread      0 S [glink_ssr_wq]
+root           161     2       0      0 rescuer_thread      0 S [glink_lbsrv]
+root           162     2       0      0 rescuer_thread      0 S [apr_driver]
+root           163     2       0      0 rescuer_thread      0 S [mem_share_svc]
+root           164     2       0      0 rescuer_thread      0 S [qmi_hndl0000000]
+root           165     2       0      0 rescuer_thread      0 S [msm_ipc_router]
+root           166     2       0      0 rescuer_thread      0 S [diag_real_time_]
+root           167     2       0      0 rescuer_thread      0 S [diag_wq]
+root           168     2       0      0 rescuer_thread      0 S [DIAG_USB_diag]
+root           169     2       0      0 rescuer_thread      0 S [diag_cntl_wq]
+root           170     2       0      0 rescuer_thread      0 S [diag_dci_wq]
+root           171     2       0      0 rescuer_thread      0 S [DIAG_SMD_MODEM_]
+root           172     2       0      0 rescuer_thread      0 S [DIAG_SMD_MODEM_]
+root           173     2       0      0 rescuer_thread      0 S [DIAG_SMD_MODEM_]
+root           174     2       0      0 rescuer_thread      0 S [DIAG_SMD_MODEM_]
+root           175     2       0      0 rescuer_thread      0 S [DIAG_SMD_MODEM_]
+root           176     2       0      0 rescuer_thread      0 S [DIAG_SMD_LPASS_]
+root           177     2       0      0 rescuer_thread      0 S [DIAG_SMD_LPASS_]
+root           178     2       0      0 rescuer_thread      0 S [DIAG_SMD_LPASS_]
+root           179     2       0      0 rescuer_thread      0 S [DIAG_SMD_LPASS_]
+root           180     2       0      0 rescuer_thread      0 S [DIAG_SMD_LPASS_]
+root           181     2       0      0 rescuer_thread      0 S [DIAG_SMD_WCNSS_]
+root           182     2       0      0 rescuer_thread      0 S [DIAG_SMD_WCNSS_]
+root           183     2       0      0 rescuer_thread      0 S [DIAG_SMD_WCNSS_]
+root           184     2       0      0 rescuer_thread      0 S [DIAG_SMD_WCNSS_]
+root           185     2       0      0 rescuer_thread      0 S [DIAG_SMD_WCNSS_]
+root           186     2       0      0 rescuer_thread      0 S [DIAG_SMD_SENSOR]
+root           187     2       0      0 rescuer_thread      0 S [DIAG_SMD_SENSOR]
+root           188     2       0      0 rescuer_thread      0 S [DIAG_SMD_SENSOR]
+root           189     2       0      0 rescuer_thread      0 S [DIAG_SMD_SENSOR]
+root           190     2       0      0 rescuer_thread      0 S [DIAG_SMD_SENSOR]
+root           191     2       0      0 rescuer_thread      0 S [DIAG_SOCKMODEM_]
+root           192     2       0      0 rescuer_thread      0 S [DIAG_SOCKMODEM_]
+root           193     2       0      0 rescuer_thread      0 S [DIAG_SOCKMODEM_]
+root           194     2       0      0 rescuer_thread      0 S [DIAG_SOCKMODEM_]
+root           195     2       0      0 rescuer_thread      0 S [DIAG_SOCKMODEM_]
+root           196     2       0      0 rescuer_thread      0 S [DIAG_SOCKLPASS_]
+root           197     2       0      0 rescuer_thread      0 S [DIAG_SOCKLPASS_]
+root           198     2       0      0 rescuer_thread      0 S [DIAG_SOCKLPASS_]
+root           199     2       0      0 rescuer_thread      0 S [DIAG_SOCKLPASS_]
+root           200     2       0      0 rescuer_thread      0 S [DIAG_SOCKLPASS_]
+root           201     2       0      0 rescuer_thread      0 S [DIAG_SOCKWCNSS_]
+root           202     2       0      0 rescuer_thread      0 S [DIAG_SOCKWCNSS_]
+root           203     2       0      0 rescuer_thread      0 S [DIAG_SOCKWCNSS_]
+root           204     2       0      0 rescuer_thread      0 S [DIAG_SOCKWCNSS_]
+root           205     2       0      0 rescuer_thread      0 S [DIAG_SOCKWCNSS_]
+root           206     2       0      0 rescuer_thread      0 S [DIAG_SOCKSENSOR]
+root           207     2       0      0 rescuer_thread      0 S [DIAG_SOCKSENSOR]
+root           208     2       0      0 rescuer_thread      0 S [DIAG_SOCKSENSOR]
+root           209     2       0      0 rescuer_thread      0 S [DIAG_SOCKSENSOR]
+root           210     2       0      0 rescuer_thread      0 S [DIAG_SOCKSENSOR]
+root           211     2       0      0 rescuer_thread      0 S [DIAG_CNTL_SOCKE]
+root           212     2       0      0 rescuer_thread      0 S [kgsl-workqueue]
+root           213     2       0      0 rescuer_thread      0 S [kgsl-mementry]
+root           214     2       0      0                     0 S [kgsl_worker_thr]
+root           215     2       0      0 rescuer_thread      0 S [kgsl-events]
+root           216     2       0      0 rescuer_thread      0 S [kgsl_devfreq_wq]
+root           237     2       0      0 kthread_worker_fn   0 S [spi7]
+root           240     2       0      0 rescuer_thread      0 S [usbnet]
+root           241     2       0      0 rescuer_thread      0 S [sharedmem_qmi_w]
+root           242     2       0      0 rescuer_thread      0 S [qmi_hndl0000000]
+root           245     2       0      0 rescuer_thread      0 S [k_gserial]
+root           246     2       0      0 rescuer_thread      0 S [k_ipa_usb]
+root           247     2       0      0 rescuer_thread      0 S [uether]
+root           248     2       0      0 rescuer_thread      0 S [k_gbridge]
+root           249     2       0      0 irq_thread          0 S [irq/72-ft5x06_7]
+root           250     2       0      0 rescuer_thread      0 S [msm_vidc_worker]
+root           251     2       0      0 rescuer_thread      0 S [pm_workerq_venu]
+root           252     2       0      0 rescuer_thread      0 S [msm_cci_wq]
+root           253     2       0      0 rescuer_thread      0 S [msm_cci_wq]
+root           254     2       0      0 rescuer_thread      0 S [msm_cpp_workque]
+root           255     2       0      0 sensor_sysfs_notify 0 S [therm_core:noti]
+root           256     2       0      0 sensor_sysfs_notify 0 S [therm_core:noti]
+root           257     2       0      0 sensor_sysfs_notify 0 S [therm_core:noti]
+root           258     2       0      0 sensor_sysfs_notify 0 S [therm_core:noti]
+root           259     2       0      0 sensor_sysfs_notify 0 S [therm_core:noti]
+root           260     2       0      0 sensor_sysfs_notify 0 S [therm_core:noti]
+root           261     2       0      0 sensor_sysfs_notify 0 S [therm_core:noti]
+root           262     2       0      0 sensor_sysfs_notify 0 S [therm_core:noti]
+root           263     2       0      0 sensor_sysfs_notify 0 S [therm_core:noti]
+root           264     2       0      0 sensor_sysfs_notify 0 S [therm_core:noti]
+root           265     2       0      0 sensor_sysfs_notify 0 S [therm_core:noti]
+root           266     2       0      0 sensor_sysfs_notify 0 S [therm_core:noti]
+root           267     2       0      0 sensor_sysfs_notify 0 S [therm_core:noti]
+root           268     2       0      0 sensor_sysfs_notify 0 S [therm_core:noti]
+root           269     2       0      0 irq_thread          0 S [irq/167-tsens_i]
+root           270     2       0      0 sensor_sysfs_notify 0 S [therm_core:noti]
+root           271     2       0      0 sensor_sysfs_notify 0 S [therm_core:noti]
+root           272     2       0      0 rescuer_thread      0 S [dm_bufio_cache]
+root           273     2       0      0 cpufreq_interactive_speedchange_task 0 S [cfinteractive]
+root           274     2       0      0 irq_thread          0 S [irq/219-7824900]
+root           275     2       0      0 irq_thread          0 S [irq/218-mmc0]
+root           276     2       0      0 irq_thread          0 S [irq/221-7864900]
+root           277     2       0      0 irq_thread          0 S [irq/220-mmc1]
+root           278     2       0      0 mmc_cmdq_thread     0 D [mmc-cmdqd/0]
+root           279     2       0      0 mmc_queue_thread    0 S [mmcqd/0rpmb]
+root           280     2       0      0 irq_thread          0 S [irq/74-7864900.]
+root           281     2       0      0 rescuer_thread      0 S [binder]
+root           282     2       0      0 irq_thread          0 S [irq/163-spdm_bw]
+root           283     2       0      0 rescuer_thread      0 S [ipv6_addrconf]
+root           284     2       0      0 rfcomm_run          0 S [krfcommd]
+root           295     2       0      0 irq_thread          0 S [irq/411-adsp]
+root           296     2       0      0 rescuer_thread      0 S [sysmon_wq]
+root           297     2       0      0 rescuer_thread      0 S [qmi_svc_event_w]
+root           298     2       0      0 irq_thread          0 S [irq/443-wcnss]
+root           299     2       0      0 irq_thread          0 S [irq/379-modem]
+root           300     2       0      0 irq_thread          0 S [irq/32-bq fuel ]
+root           301     2       0      0 sensor_sysfs_notify 0 S [therm_core:noti]
+root           303     2       0      0 sensor_sysfs_notify 0 S [therm_core:noti]
+root           304     2       0      0 irq_thread          0 S [irq/68-bq2560x ]
+root           306     2       0      0 rescuer_thread      0 S [goodix_wq]
+root           307     2       0      0 rescuer_thread      0 S [gtp_esd_check]
+root           308     2       0      0 try_hotplug         0 S [core_ctl/0]
+root           321     2       0      0 rescuer_thread      0 S [rq_stats]
+root           322     2       0      0 events_notify_userspace 0 S [msm_perf:events]
+root           323     2       0      0 rescuer_thread      0 S [bam_dmux_rx]
+root           324     2       0      0 rescuer_thread      0 S [bam_dmux_tx]
+root           325     2       0      0 rescuer_thread      0 S [FILE_FREE]
+root           326     2       0      0 rescuer_thread      0 S [k_bam_data]
+root           327     2       0      0 rescuer_thread      0 S [f_mtp]
+root           328     2       0      0 mmc_queue_thread    0 S [mmcqd/1]
+root           329     2       0      0 rescuer_thread      0 S [usb_bam_wq]
+root           330     2       0      0 worker_thread       0 S [kworker/0:1H]
+root           333     2       0      0 rescuer_thread      0 S [kdmflush]
+root           334     2       0      0 rescuer_thread      0 S [bioset]
+root           335     2       0      0 rescuer_thread      0 S [kverityd]
+root           336     2       0      0 rescuer_thread      0 S [bioset]
+root           337     2       0      0 rescuer_thread      0 S [bioset]
+root           338     2       0      0 rescuer_thread      0 S [bioset]
+root           341     2       0      0 kjournald2          0 S [jbd2/dm-0-8]
+root           342     2       0      0 rescuer_thread      0 S [ext4-rsv-conver]
+root           345     1    6088    952 poll_schedule_timeout 0 S ueventd
+root           347     2       0      0 worker_thread       0 S [kworker/2:1H]
+root           354     2       0      0 kjournald2          0 S [jbd2/mmcblk0p48]
+root           355     2       0      0 rescuer_thread      0 S [ext4-rsv-conver]
+root           356     2       0      0 kjournald2          0 S [jbd2/mmcblk0p25]
+root           357     2       0      0 rescuer_thread      0 S [ext4-rsv-conver]
+root           358     2       0      0 kjournald2          0 S [jbd2/mmcblk0p12]
+root           359     2       0      0 rescuer_thread      0 S [ext4-rsv-conver]
+root           360     2       0      0 kjournald2          0 S [jbd2/mmcblk0p26]
+root           361     2       0      0 rescuer_thread      0 S [ext4-rsv-conver]
+root           362     1   17772   1188 binder_thread_read  0 S mqsasd
+logd           363     1   28656  10648 sigsuspend          0 S logd
+system         364     1   10720   1360 binder_thread_read  0 S servicemanager
+system         365     1   14572   2324 SyS_epoll_wait      0 S hwservicemanager
+system         366     1   10536   1212 binder_thread_read  0 S vndservicemanager
+root           374     2       0      0 kauditd_thread      0 S [kauditd]
+system         376     1   13068   1188 do_wait             0 S qseecomd
+system         379   376   23224    912 sigsuspend          0 S qseecomd
+system         389     1   14252   2244 binder_thread_read  0 S android.hardware.keymaster@3.0-service
+root           390     1   52220   1800 sigsuspend          0 S vold
+root           407     2       0      0 worker_thread       0 S [kworker/1:1H]
+root           466     2       0      0 rescuer_thread      0 S [IPCRTR]
+root           468     2       0      0 rescuer_thread      0 S [adsp_IPCRTR]
+root           470     2       0      0 irq_thread          0 S [irq/184-mbhc sw]
+root           471     2       0      0 irq_thread          0 S [irq/182-Button ]
+root           472     2       0      0 irq_thread          0 S [irq/181-Button ]
+root           473     2       0      0 irq_thread          0 S [irq/180-Elect I]
+root           474     2       0      0 irq_thread          0 S [irq/183-Elect R]
+root           475     2       0      0 irq_thread          0 S [irq/187-HPH_L O]
+root           476     2       0      0 irq_thread          0 S [irq/186-HPH_R O]
+system         479     1   12232   1592 binder_thread_read  0 S android.hidl.allocator@1.0-service
+system         480     1 2158240   2344 binder_thread_read  0 S mtd
+system         481     1   38156    728 binder_thread_read  0 S vsimd
+audioserver    482     1   68792   4132 binder_thread_read  0 S android.hardware.audio@2.0-service
+bluetooth      483     1   17880   1532 binder_thread_read  0 S android.hardware.bluetooth@1.0-service-qti
+cameraserver   484     1  102932   3716 binder_thread_read  0 S android.hardware.camera.provider@2.4-service
+media          485     1    8236    508 binder_thread_read  0 S android.hardware.cas@1.0-service
+system         486     1   14524   1480 binder_thread_read  0 S android.hardware.configstore@1.0-service
+media          487     1   15076    656 binder_thread_read  0 S android.hardware.drm@1.0-service
+media          488     1   13580    804 binder_thread_read  0 S android.hardware.drm@1.0-service.widevine
+system         489     1   12516   1432 binder_thread_read  0 S android.hardware.gatekeeper@1.0-service
+system         490     1   17408   1708 binder_thread_read  0 S android.hardware.graphics.allocator@2.0-service
+system         491     1   28496   3260 binder_thread_read  0 S android.hardware.graphics.composer@2.1-service
+system         492     1   12288   1492 binder_thread_read  0 S android.hardware.health@1.0-service
+system         493     1   14328   1276 binder_thread_read  0 S android.hardware.ir@1.0-service
+system         494     1   13028   1524 binder_thread_read  0 S android.hardware.light@2.0-service
+system         495     1   12296   1516 binder_thread_read  0 S android.hardware.memtrack@1.0-service
+system         496     1   15368   1616 binder_thread_read  0 S android.hardware.power@1.0-service
+system         497     1   80500   1972 binder_thread_read  0 S android.hardware.sensors@1.0-service
+system         498     1   12308   1284 binder_thread_read  0 S android.hardware.thermal@1.0-service
+root           499     1   13396   1304 binder_thread_read  0 S android.hardware.usb@1.0-service
+root           500     2       0      0 rescuer_thread      0 S [qmi_hndl0000000]
+system         501     1   12300   1456 binder_thread_read  0 S android.hardware.vibrator@1.0-service
+wifi           502     1   15804   2280 binder_thread_read  0 S android.hardware.wifi@1.0-service
+system         503     1   14288   1296 binder_thread_read  0 S vendor.display.color@1.0-service
+system         504     1   12348   1296 binder_thread_read  0 S vendor.qti.esepowermanager@1.0-service
+gps            505     1   48488   2604 binder_thread_read  0 S vendor.qti.gnss@1.0-service
+system         506     1   12280   1280 binder_thread_read  0 S vendor.qti.hardware.alarm@1.0-service
+system         507     1   15452   1288 binder_thread_read  0 S vendor.qti.hardware.factory@1.0-service
+system         508     1   15956   1332 binder_thread_read  0 S vendor.qti.hardware.qdutils_disp@1.0-service-qti
+system         509     1   15460   1284 binder_thread_read  0 S vendor.qti.hardware.qteeconnector@1.0-service
+system         510     1   12912   1460 binder_thread_read  0 S vendor.qti.hardware.tui_comm@1.0-service-qti
+root           511     1   13612   1668 SyS_epoll_wait      0 S healthd
+nobody         514     1   16076   1168 poll_schedule_timeout 0 S rmt_storage
+oem_2903       515     1   10612   1040 poll_schedule_timeout 0 S tftp_server
+system         517     1   17900   1228 do_sigtimedwait     0 S pm-service
+root           521     1    9456   1332 SyS_epoll_wait      0 S lmkd
+system         522     1  107876   9932                     0 S surfaceflinger
+root           523     1   14044   1216 binder_thread_read  0 S thermalserviced
+root           524     1   13396    884 futex_wait_queue_me 0 S mmid
+system         538     1   16660   1184 futex_wait_queue_me 0 S ATFWD-daemon
+system         539     1   15020   1140 hrtimer_nanosleep   0 S pm-proxy
+nobody         558     1   19972   1252 futex_wait_queue_me 0 S sensors.qcom
+root           689     2       0      0 rescuer_thread      0 S [IPCRTR]
+root           690     2       0      0 rescuer_thread      0 S [modem_IPCRTR]
+root           694     2       0      0 rescuer_thread      0 S [qmi_hndl0000000]
+root           702     2       0      0 rescuer_thread      0 S [kdmflush]
+root           703     2       0      0 rescuer_thread      0 S [bioset]
+root           711     2       0      0 kjournald2          0 S [jbd2/dm-1-8]
+root           712     2       0      0 rescuer_thread      0 S [ext4-rsv-conver]
+system         719     1 2171580   3596 SyS_epoll_wait      0 S cnd
+system         720     1   25520   1944 SyS_epoll_wait      0 S dpmQmiMgr
+system         721     1   18632   1192 futex_wait_queue_me 0 S time_daemon
+root           722     1   66772   1300 sigsuspend          0 S thermal-engine
+system         723     1   13260   1116 wcnss_wlan_read     0 S wcnss_service
+media          725     1   11408   1012 poll_schedule_timeout 0 S adsprpcd
+root           726     1    9956   1112 SyS_epoll_wait      0 S hvdcp_opti
+root           733     1 4339444  45436 poll_schedule_timeout 0 S zygote64
+root           734     1 1674436  18880 poll_schedule_timeout 0 S zygote
+system         735     1 2156272   2160 binder_thread_read  0 S shelld
+root           736     1   12612   1088 binder_thread_read  0 S fdpp
+audioserver    743     1   69060   2944 binder_thread_read  0 S audioserver
+cameraserver   744     1   35472   2444 binder_thread_read  0 S cameraserver
+drm            745     1   24568   1072 binder_thread_read  0 S drmserver
+root           746     1   29340   2452 binder_thread_read  0 S installd
+keystore       748     1   17816   2344 binder_thread_read  0 S keystore
+media          749     1   12744    716 binder_thread_read  0 S mediadrmserver
+mediaex        750     1 2188108   3784 binder_thread_read  0 S media.extractor
+media          752     1 2134480   1604 binder_thread_read  0 S media.metrics
+media          753     1   58528   3008 binder_thread_read  0 S mediaserver
+root           804     2       0      0 do_hotplug          0 S [msm_thermal:hot]
+root           805     2       0      0 do_freq_mitigation  0 S [msm_thermal:fre]
+root           806     2       0      0 do_thermal_monitor  0 S [msm_thermal:the]
+root           810     1   31444   2500 binder_thread_read  0 S netd
+root           811     1   17500   1884 binder_thread_read  0 S storaged
+wifi           812     1   40384   2312 SyS_epoll_wait      0 S wificond
+mediacodec     813     1   69252   5416 binder_thread_read  0 S media.codec
+radio          814     1   95936   6492 binder_thread_read  0 S rild
+root           815     1   21064   1728 binder_thread_read  0 S vendor.qti.hardware.perf@1.0-service
+system         816     1   15148   1376 poll_schedule_timeout 0 S cnss-daemon
+gps            817     1   10544    872 hrtimer_nanosleep   0 S mlid
+gps            818     1   11532   1252 sigsuspend          0 S loc_launcher
+camera         821     1  121436   7176 poll_schedule_timeout 0 S mm-qcamera-daemon
+root           822     1   13088   1364 unix_stream_recvmsg 0 S dpmd
+system         823     1   15628   1644 binder_thread_read  0 S gatekeeperd
+tombstoned     824     1    9268    896 SyS_epoll_wait      0 S tombstoned
+root           825     1   17512   1332 binder_thread_read  0 S interfaces.factoryAta@1.0-service
+root           827     1   17588   1380 binder_thread_read  0 S interfaces.factoryInterface@1.0-service
+gps            842   818   18284   1572 futex_wait_queue_me 0 S lowi-server
+gps            843   818   24760   1036 futex_wait_queue_me 0 S xtwifi-inet-agent
+gps            844   818   39332   2468 futex_wait_queue_me 0 S xtwifi-client
+gps            845   818   31876   1680 poll_schedule_timeout 0 S slim_daemon
+gps            846   818   25236   2192 __skb_recv_datagram 0 S xtra-daemon
+system         847   822   16552   1576 SyS_epoll_wait      0 S dpmd
+radio          891     1   11440   1020 poll_schedule_timeout 0 S ipacm-diag
+root           923     2       0      0 rescuer_thread      0 S [IPCRTR]
+system         927     1   20776   1316 poll_schedule_timeout 0 S imsqmidaemon
+radio          928     1   22240   1780 futex_wait_queue_me 0 S ipacm
+system         932     1   30988   1588 poll_schedule_timeout 0 S imsdatadaemon
+radio          933     1   82220   5044 binder_thread_read  0 S rild
+root           935     2       0      0 rescuer_thread      0 S [wcnss_IPCRTR]
+radio          971     1   17072   1052 poll_schedule_timeout 0 S qti
+radio          982     1   61944   2100 __skb_recv_datagram 0 S netmgrd
+system         989     1 2148864   2212 binder_thread_read  0 S ims_rtp_daemon
+system         994     1   24456   1636 binder_thread_read  0 S imsrcsd
+system        1460   733 4731204 240968 SyS_epoll_wait      0 S system_server
+u0_a101       1609   733 4752548 124176 SyS_epoll_wait      0 S com.google.android.inputmethod.latin
+system        1626   733 4664076 132708 SyS_epoll_wait      0 S com.android.systemui
+root          1706     2       0      0 worker_thread       0 S [kworker/3:1H]
+root          1731   810    9692   1220 pipe_wait           0 S iptables-restore
+root          1734   810    9712   1236 pipe_wait           0 S ip6tables-restore
+system        1759   733 4431516  42808 SyS_epoll_wait      0 S .dataservices
+radio         1764   733 4417224  36564 SyS_epoll_wait      0 S com.qualcomm.qti.telephonyservice
+u0_a134       1772   733 4419028  37292 SyS_epoll_wait      0 S se.dirac.acs
+radio         1793   733 4537444  76604 SyS_epoll_wait      0 S com.android.phone
+u0_a27        1821   733 4561152 100720 SyS_epoll_wait      0 S com.miui.home
+radio         1994   733 4417788  38960 SyS_epoll_wait      0 S com.qualcomm.qcrilmsgtunnel
+u0_a18        2243   733 4687132 138604 SyS_epoll_wait      0 S com.google.android.gms.persistent
+system        2265     1   34592   1824 binder_thread_read  0 S mcd
+root          2289     2       0      0 irq_thread          0 S [irq/204-408000.]
+system        2348   733 4603320  85716 SyS_epoll_wait      0 S com.miui.securitycenter.remote
+root          2405     2       0      0 notify_userspace    0 S [wrkld_notify]
+u0_a47        2411   733 4675312  53908 SyS_epoll_wait      0 S com.google.android.googlequicksearchbox:interactor
+system        2428     1   15056    968 futex_wait_queue_me 0 S gamed
+system        2434   733 4421704  36656 SyS_epoll_wait      0 S com.factory.mmigroup
+system        2441   733 4445536  52080 SyS_epoll_wait      0 S com.miui.daemon
+u0_a112       2455   733 4469632  66976 SyS_epoll_wait      0 S com.xiaomi.xmsf
+finddevice    2478   733 4449440  51136 SyS_epoll_wait      0 S com.xiaomi.finddevice
+radio         2484   733 4413328  34112 SyS_epoll_wait      0 S com.qualcomm.qti.loadcarrier
+system        2493   733 4417984  36276 SyS_epoll_wait      0 S com.qualcomm.qti.services.secureui:sui_service
+system        2516   733 4413236  33676 SyS_epoll_wait      0 S com.miui.face
+u0_a18        2874   733 4746696 113924 SyS_epoll_wait      0 S com.google.android.gms
+system        2951   733 4429916  44400 SyS_epoll_wait      0 S com.xiaomi.location.fused
+system        3555   733 4463892  62060 SyS_epoll_wait      0 S com.miui.powerkeeper
+system        4715   733 4431484  44340 SyS_epoll_wait      0 S com.xiaomi.joyose
+system        5949   733 4478072  62948 SyS_epoll_wait      0 S com.miui.cleanmaster
+shell         6919     1   19304   1352 poll_schedule_timeout 0 S adbd
+u0_a18        7183   733 4531644  59280 SyS_epoll_wait      0 S com.google.android.gms.unstable
+root          7819     2       0      0 worker_thread       0 S [kworker/u8:2]
+root          7820     2       0      0 worker_thread       0 S [kworker/u8:3]
+root          8200     2       0      0 worker_thread       0 S [kworker/u9:0]
+root          8376     2       0      0 worker_thread       0 S [kworker/u9:3]
+root          8377     2       0      0 worker_thread       0 S [kworker/u9:4]
+bluetooth     9198   733 4452560  43748 SyS_epoll_wait      0 S com.android.bluetooth
+webview_zygote 9837    1 1429044   5616 poll_schedule_timeout 0 S webview_zygote32
+system       10461   733 4489168  52592 SyS_epoll_wait      0 S com.android.settings:remote
+u0_a18       13462   733 4423236  41560 SyS_epoll_wait      0 S com.google.process.gservices
+root         13498     2       0      0 worker_thread       0 S [kworker/u9:1]
+root         13887     2       0      0 worker_thread       0 S [kworker/0:3]
+root         14252     2       0      0 worker_thread       0 S [kworker/u8:6]
+u0_a138      14683   733 4541516  91200 SyS_epoll_wait      0 S com.whatsapp
+root         16388     2       0      0 worker_thread       0 S [kworker/1:0]
+root         16404     2       0      0 worker_thread       0 S [kworker/3:0]
+u0_a2        16554   733 4427032  50036 SyS_epoll_wait      0 S com.lbe.security.miui
+root         17097     2       0      0 worker_thread       0 S [kworker/u8:8]
+root         17242     2       0      0 mdss_mdp_video_wait4comp 0 D [mdss_fb0]
+root         17650     2       0      0 VosWDThread         0 S [VosWDThread]
+root         17652     2       0      0 VosMCThread         0 S [VosMCThread]
+root         17653     2       0      0 VosTXThread         0 S [VosTXThread]
+root         17654     2       0      0 VosRXThread         0 S [VosRXThread]
+root         17656     2       0      0 wlan_logging_thread 0 S [wlan_logging_th]
+wifi         17667     1   11388   2668 poll_schedule_timeout 0 S hostapd
+nobody       17674   810    9300   1912 poll_schedule_timeout 0 S dnsmasq
+root         17861     2       0      0 worker_thread       0 S [kworker/2:0]
+root         17885     2       0      0 worker_thread       0 S [kworker/u8:10]
+root         18138     2       0      0 worker_thread       0 S [kworker/1:1]
+u0_a40       18346   733 4568212 121644 SyS_epoll_wait      0 S com.android.vending
+u0_a30       19171   733 4472876  71812 SyS_epoll_wait      0 S com.miui.gallery
+u0_a14       19300   733 4434776  51112 SyS_epoll_wait      0 S android.process.media
+u0_a18       19432   733 4418388  42808 SyS_epoll_wait      0 S com.google.process.gapps
+u0_a28       19491   733 4435064  51128 SyS_epoll_wait      0 S com.android.camera
+u0_i55       19557  9837 1602516  57996 SyS_epoll_wait      0 S com.android.chrome:sandboxed
+root         19653     2       0      0 worker_thread       0 S [kworker/0:0]
+root         19656     2       0      0 worker_thread       0 S [kworker/2:1]
+u0_a345      19659   733 4667056 119472 SyS_epoll_wait      0 S com.instagram.android
+root         19802     2       0      0 worker_thread       0 S [kworker/3:2]
+u0_a21       19822   733 4417580  39740 SyS_epoll_wait      0 S com.google.android.partnersetup
+u0_a73       19941   733 4617552 101168 SyS_epoll_wait      0 S com.google.android.gm
+root         20243     2       0      0 worker_thread       0 S [kworker/1:2]
+u0_a66       20264   734 1866612 104712 SyS_epoll_wait      0 S com.android.chrome
+u0_a146      20326   734 1810752  79384 SyS_epoll_wait      0 S cn.wps.xiaomi.abroad.lite:mofficeservice
+u0_a146      20370   734 1751680  35988 SyS_epoll_wait      0 S cn.wps.xiaomi.abroad.lite
+u0_a109      20506   733 4487128  87540 SyS_epoll_wait      0 S com.google.android.apps.photos
+root         20618     2       0      0 worker_thread       0 S [kworker/2:2]
+root         20629     2       0      0 worker_thread       0 S [kworker/0:1]
+root         20657     2       0      0 worker_thread       0 S [kworker/2:3]
+system       20662   733 4557104 124180 SyS_epoll_wait      0 S com.mi.android.globalminusscreen
+root         20678     2       0      0 worker_thread       0 S [kworker/3:1]
+shell        20830  6919   10748   1984 0          7254c6ff1c R ps
+u0_a105      23034   733 21266524 69368 SyS_epoll_wait      0 S com.miui.msa.global
+u0_a49       23576   734 1776980  41240 SyS_epoll_wait      0 S com.miui.analytics
+u0_a99       23831   733 4415388  35724 SyS_epoll_wait      0 S com.qualcomm.qti.StatsPollManager
+u0_a46       24412   733 4438660  52460 SyS_epoll_wait      0 S com.facebook.services
+system       24509   733 4427868  38976 SyS_epoll_wait      0 S com.xiaomi.mi_connect_service
+mdnsr        24524     1    5600    336 poll_schedule_timeout 0 S mdnsd
+u0_a108      24553   733 4412224  34436 SyS_epoll_wait      0 S com.android.smspush
+u0_i47       26924  9837 1560576  22792 SyS_epoll_wait      0 S com.android.chrome:sandboxed
+u0_a47       27051   733 21570784 193468 SyS_epoll_wait     0 S com.google.android.googlequicksearchbox:search
+root         31436     2       0      0 worker_thread       0 S [kworker/u9:2]
+
+C:\Users\NAVEEN\Downloads\platform-tools_r33.0.1-windows\platform-tools>adb disconnect 192.168.43.1
+disconnected 192.168.43.1
